@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodlis | To-Do List App</title>
+    <link rel="icon" type="image/png" href="asset/img/bg1.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="asset/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h1>Goodlis <span class="span">To-Do</span> App</h1>
+        <p>Aplikasi Untuk Mencatat Daftar Pekerjaan</p>
+        <div class="stat-container">
+          <div class="details">
+            <h3>Tetap Semangat</h3>
+            <div id="progress-bar">
+              <div  id="progres"></div>
+            </div>
+          </div>
+          <div class="stat-number">
+            <p id="numbers">0 / 0</p>
+          </div>
+        </div>
+        <form class="input-area">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Tambahkan Task baru..."
+          />
+          <button type="button" id="add-task-btn">
+            <i class="fa-notdog fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <div class="todos-container">
+          <ul id="task-list"></ul>
+          <img class="empty-img" src="asset/img/ilus-kosong.png" alt="kosong" />
+        </div>
+      </div>
+    </div>
+    <!-- Modal Celebration -->
+    <div id="celebration-modal" class="celebration-modal">
+      <div class="celebration-content">
+        <div class="celebration-icon">🎉</div>
+        <h2>Luar Biasa! Semua Task Selesai!</h2>
+        <p>Kamu hebat! Terus pertahankan semangat mu!</p>
+        <button id="close-celebration-btn" class="celebration-btn">Buat Task Baru</button>
+      </div>
+    </div>
+  </body>
+  <script src="asset/script.js"></script>
+</html>
